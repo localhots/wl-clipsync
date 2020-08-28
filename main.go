@@ -28,7 +28,7 @@ func main() {
 		if primary != "" && primary != unified {
 			unified = primary
 			setVal(unified)
-			if *debug {
+			if *debug || *lotsofDebug {
 				fmt.Println("Setting clip to", unified)
 			}
 			continue
@@ -41,7 +41,7 @@ func main() {
 		if selection != "" && selection != unified {
 			unified = selection
 			setVal(unified, "-p")
-			if *debug {
+			if *debug || *lotsofDebug {
 				fmt.Println("Setting primary to", unified)
 			}
 		}

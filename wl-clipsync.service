@@ -1,0 +1,8 @@
+[Unit]
+Description=Synchronizes primary and clipboard paste buffers
+
+[Service]
+ExecStart=wl-clipsync -i 300ms
+
+[Install]
+WantedBy=default.target
